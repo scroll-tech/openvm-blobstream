@@ -1,0 +1,6 @@
+[submodule "verifier/lib/forge-std"]
+	path = verifier/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "verifier/lib/blobstream-contracts"]
+	path = verifier/lib/blobstream-contracts
+	url = https://github.com/celestiaorg/blobstream-contracts
