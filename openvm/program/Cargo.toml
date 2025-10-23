@@ -1,0 +1,12 @@
+[package]
+edition = "2021"
+name = "blobstream-program"
+version = "0.1.0"
+
+[dependencies]
+openvm = { workspace = true, features = ["std", "getrandom-unsupported"] }
+openvm-algebra-guest.workspace = true
+openvm-ecc-guest.workspace = true
+openvm-k256.workspace = true
+openvm-sha2.workspace = true
+openvm-blobstream.workspace = true
