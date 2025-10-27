@@ -1,7 +1,9 @@
-use crate::da_oracle::{DataCommitmentStored, SP1BlobstreamInstance};
-use crate::verifier::{
-    AttestationProof, BinaryMerkleProof, DataRootTuple, Namespace, NamespaceMerkleMultiproof,
-    NamespaceNode, SharesProof,
+use crate::{
+    da_oracle::{DataCommitmentStored, SP1BlobstreamInstance},
+    verifier::{
+        AttestationProof, BinaryMerkleProof, DataRootTuple, Namespace, NamespaceMerkleMultiproof,
+        NamespaceNode, SharesProof,
+    },
 };
 use alloy_primitives::{B256, Bytes, U256, hex};
 use alloy_provider::Provider;
