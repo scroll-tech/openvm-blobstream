@@ -4,9 +4,8 @@ name = "blobstream-program"
 version = "0.1.0"
 
 [dependencies]
-openvm = { workspace = true, features = ["std", "getrandom-unsupported"] }
+openvm = { workspace = true, features = ["std"] }
 openvm-algebra-guest.workspace = true
+openvm-blobstream = { workspace = true, features = ["openvm"] }
 openvm-ecc-guest.workspace = true
-openvm-k256.workspace = true
-openvm-sha2.workspace = true
-openvm-blobstream.workspace = true
+openvm-keccak256-guest = { workspace = true }
