@@ -1,29 +1,21 @@
 [workspace]
 members = [
-  "program",
-  "script",
+    "program",
+    "script",
 ]
 resolver = "2"
 
 [workspace.dependencies]
 bitcode = "0.6"
-clap = "*"
 toml = "*"
 tracing = "*"
+serde_json = "*"
 
 openvm-blobstream = { path = ".." }
 
-openvm = { git = "https://github.com/openvm-org/openvm.git", tag = "v1.4.0" }
-openvm-algebra-guest = { git = "https://github.com/openvm-org/openvm.git", tag = "v1.4.0", default-features = false }
-openvm-benchmarks-prove = { git = "https://github.com/openvm-org/openvm.git", tag = "v1.4.0" }
-openvm-circuit = { git = "https://github.com/openvm-org/openvm.git", tag = "v1.4.0" }
-openvm-ecc-guest = { git = "https://github.com/openvm-org/openvm.git", tag = "v1.4.0", default-features = false }
-openvm-k256 = { git = "https://github.com/openvm-org/openvm.git", package = "k256", tag = "v1.4.0", features = ["std"] }
-openvm-keccak256-guest = { git = "https://github.com/openvm-org/openvm.git", tag = "v1.4.0" }
-openvm-sdk = { git = "https://github.com/openvm-org/openvm.git", tag = "v1.4.0" }
-openvm-sha2 = { git = "https://github.com/openvm-org/openvm.git", tag = "v1.4.0" }
-
-openvm-stark-sdk = { git = "https://github.com/openvm-org/stark-backend.git", tag = "v1.2.0" }
-
-[patch.crates-io]
-#k256 = { git = "https://github.com/openvm-org/openvm.git", tag = "v1.4.0" }
+openvm = { git = "https://github.com/openvm-org/openvm.git", tag = "v1.4.1" }
+openvm-algebra-guest = { git = "https://github.com/openvm-org/openvm.git", tag = "v1.4.1", default-features = false }
+openvm-circuit = { git = "https://github.com/openvm-org/openvm.git", tag = "v1.4.1" }
+openvm-ecc-guest = { git = "https://github.com/openvm-org/openvm.git", tag = "v1.4.1", default-features = false }
+openvm-keccak256-guest = { git = "https://github.com/openvm-org/openvm.git", tag = "v1.4.1" }
+openvm-sdk = { git = "https://github.com/openvm-org/openvm.git", tag = "v1.4.1" }

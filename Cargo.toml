@@ -17,8 +17,8 @@ reqwest = { version = "0.12", features = ["json"], optional = true }
 tendermint = { version = "0.40", optional = true }
 
 # openvm
-openvm-ecc-guest = { git = "https://github.com/openvm-org/openvm.git", tag = "v1.4.0", optional = true }
-openvm-pairing = { git = "https://github.com/openvm-org/openvm.git", tag = "v1.4.0", optional = true }
+openvm-ecc-guest = { git = "https://github.com/openvm-org/openvm.git", tag = "v1.4.1", optional = true }
+openvm-pairing = { git = "https://github.com/openvm-org/openvm.git", tag = "v1.4.1", optional = true }
 
 [features]
 host = ["dep:alloy-contract", "dep:alloy-provider", "dep:reqwest", "dep:tendermint"]
